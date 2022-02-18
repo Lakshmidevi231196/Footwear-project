@@ -1,0 +1,58 @@
+
+<body>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary design" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<span>Order</span>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <table class="table-fill table-responsive">
+                <thead>
+                <tr>
+                <th class="text-left">Product Details</th>
+                <th class="text-left"></th>
+                </tr>
+                </thead>
+                <tbody class="table-hover">
+                <tr>
+                <td class="text-left">Product Code</td>
+                <td class="text-left">100</td>
+                </tr>
+                <tr>
+                <td class="text-left">Product Name</td>
+                <td class="text-left">Croc's Mens</td>
+                </tr>
+                <tr>
+                <td class="text-left">Price</td>
+                <td class="text-left"><input type="number" id="PD" [(ngModel)]="PD"></td>
+                </tr>
+                <tr>
+                <td class="text-left">Quantity</td>
+                <td class="text-left"><input type="number" id="TSTO" [(ngModel)]="TSTO"></td>
+                </tr>
+                <tr>
+                <td class="text-left">Total Amount</td>
+                <td class="text-left">{{PD * TSTO }}</td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary design" data-bs-dismiss="modal"><span>Back to Products</span></button>
+            <button type="button" (click)="Place()"class="btn btn-primary design"><span>Place Order</span></button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  </body>

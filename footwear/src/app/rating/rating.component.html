@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form [formGroup]="form">
+
+    <div class="cont">
+      <div class="stars">
+        <ngx-star-rating formControlName="rating1" [id]="'rating'"></ngx-star-rating>
+      </div>
+      <div>Rating: {{form.value.rating1}}</div>
+      <!-- <p>form is valid: {{ form.valid ? 'true' : 'false' }}</p> -->
+    </div>
+    
+    
+    </form>
+    <button id="subm" (click)="sub()">Submit</button>
+    
+    

@@ -1,0 +1,144 @@
+<div class="row">
+
+    <div class="column" style="background-color:whitesmoke;">
+
+      <h2>{{Productname}}</h2>
+
+      <div style="width:500px; height:300px; border:1px solid black;">
+
+<img src="../assets/Images/Toddler.png" height="270" width="470" style="margin-left: 10px;margin-top: 10px;">
+
+</div>
+
+    </div>
+
+
+
+    <div class="column" style="background-color:whitesmoke;">
+
+        <h2>Kids Footwear</h2>
+  
+        <p>Kids Footwear Toddler (Pink)</p>
+  
+        <h2><b><i class="fas fa-rupee-sign"></i>{{Price}}</b></h2>
+  
+        <h4>Available offers</h4>
+  
+      
+  
+            <p><i style='font-size:12px' class='fas'>&#xf02b;</i> Partner OfferSign up for Flipkart Pay Later and get Flipkart Gift Card worth ₹100*</p>
+  
+            <p><i style='font-size:12px' class='fas'>&#xf02b;</i> Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit Card</p>
+  
+            <p><i style='font-size:12px' class='fas'>&#xf02b;</i> Partner OfferSign up for Flipkart Pay Later and get Flipkart Gift Card worth ₹100*</p>
+  
+        
+  
+        <button style="margin-left: 500px;" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="my-button"><b>Order</b></button>
+  
+      </div>
+  
+    </div>
+<!-- popup -->
+
+<!-- <button type="button" class="btn btn-primary design" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <span>Order</span> -->
+    <!-- </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Order details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+                  <table class="table-fill table-responsive">
+                  <thead>
+                  <tr>
+                  <th class="text-left">Product Details</th>
+                  <th class="text-left"></th>
+                  </tr>
+                  </thead>
+                  <tbody class="table-hover">
+                  <tr>
+                  <td class="text-left">Product Code</td>
+                  <td class="text-left">{{ProductCode}}</td>
+                  </tr>
+                  <tr>
+                  <td class="text-left">Product Name</td>
+                  <td class="text-left">{{Productname}}</td>
+                  </tr>
+                  <tr>
+                  <td class="text-left">Price</td>
+                  <td class="text-left">{{Price}}</td>
+                  </tr>
+                  <tr>
+                  <td class="text-left">Quantity</td>
+                  <td class="text-left"><input type="number" id="TSTO" [(ngModel)]="TSTO"></td>
+                  </tr>
+                  <tr>
+                  <td class="text-left">Total Amount</td>
+                  <td class="text-left">{{Price * TSTO }}</td>
+                  </tr>
+                  </tbody>
+                  </table>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary design" data-bs-dismiss="modal"><span>Back to Products</span></button>
+              <button type="button" (click)="Place()"class="btn btn-primary design"><span>Place Order</span></button>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <!-- kids2 footwear -->
+
+   
+    <div class="row1">
+
+        <div class="column" style="background-color:whitesmoke;">
+    
+            <h2>Barbie</h2>
+    
+            <div style="width:500px; height:300px; border:1px solid black;">
+    
+      <img src="../assets/Images/Barbie.jpg" height="270" width="470" style="margin-left: 10px;margin-top: 10px;">
+    
+      </div>
+    
+          </div>
+    
+          <div class="column" style="background-color:whitesmoke;">
+    
+            <h2>Kids Footwear</h2>
+    
+            <p>Barbie Girl Footwear (Blue)</p>
+    
+            <h2><b><i class="fas fa-rupee-sign"></i>299</b></h2>
+
+            <h4>Available offers</h4>
+  
+            
+      
+              <p><i style='font-size:12px' class='fas'>&#xf02b;</i> Partner OfferSign up for Flipkart Pay Later and get Flipkart Gift Card worth ₹100*</p>
+      
+                <p><i style='font-size:12px' class='fas'>&#xf02b;</i> Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit Card</p>
+      
+               <p><i style='font-size:12px' class='fas'>&#xf02b;</i> Partner OfferSign up for Flipkart Pay Later and get Flipkart Gift Card worth ₹100*</p>
+      
+            
+      
+            <button style="margin-left: 500px;" type="button" class="my-button" (click)="order()"><b>Order</b></button>
+    
+    
+          </div>
+    
+       
+    
+      </div>    
+    
+
+

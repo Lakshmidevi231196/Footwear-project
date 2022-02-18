@@ -1,0 +1,35 @@
+<div><h1><b><u>Product Details</u></b></h1></div><br>
+
+<img id="imgage" src="./assets/Images/Toddler.png">
+<div *ngFor="let item of status;let i=index;">
+
+  <div id="fw">
+    <img [src]="item.photo" >
+  </div>
+  <!-- <div><h1><b>Product Details</b></h1></div><br> -->
+  <div><h4><b> Product Code: </b>100</h4></div>
+
+
+
+  <div><h4><b> Product Name : </b>{{item.name}}</h4></div>
+
+<div ><h4><b>Price: </b>{{item.price}}</h4></div>  
+
+<div><h4><b>Quantity: </b>{{item.quantity}}</h4></div>
+
+<div><h4><b> Total Amount: </b>300</h4></div>  <!-- <div><b>{{item.price}}</b></div><br> -->
+  <div>
+    <div class="row multi-steps-wrap">
+      <ul class="list-unstyled multi-steps">
+        <li class="job-status job-created" [ngClass]="{'job-inprogress is-active negative': item.status == 'processing'}" >processing</li>
+        <li class="job-status" [ngClass]="{'job-inprogress is-active negative': item.status == 'packed'}" >Packed</li>
+        <li class="job-status job-completed "  [ngClass]="{'job-inprogress is-active negative': item.status == 'shipped'}" >Shipped</li>
+        <li class="job-status job-closed"  [ngClass]="{'job-inprogress is-active negative': item.status == 'delivered'}" >Delivered</li>
+      </ul>
+      <!-- <button id="feedback" (click)="rating()">Rating</button> -->
+      <button mat-flat-button  id="feedback" (click)="rating()">Rating</button>
+
+     
+</div>
+    </div>
+</div>
